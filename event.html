@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Event Blog List</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fff;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #812a97, #512da8);
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      font-size: 30px;
+    }
+     nav a:hover{
+      color:black;
+    }
+
+    .buy-ticket {
+      background: white;
+      color: #512da8;
+      padding: 8px 15px;
+      border-radius: 20px;
+      border: none;
+      font-weight: bold;
+      font-size: 25px;
+      cursor: pointer;
+    }
+    .hero {
+      background: linear-gradient(to right, #6a1b9a, #512da8);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      color: #ddd;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(1000px, 1fr));
+      gap: 20px
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card img {
+      width: 100%;
+      border-radius: 80px;
+    }
+
+    .title {
+      font-size: 2.8rem;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .read-time {
+      color: rgb(19, 1, 1);
+      font-size: 2.2rem;
+      margin-top: 4px;
+    }
+  </style>
+</head>
+<body>
+    <header>
+  <h1>EventPlace</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="event.html">Events</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <button class="buy-ticket">Buy Tickets</button>
+</header>
+<section class="hero">
+  <p>Find Your Next Experience</p>
+  <h2>Upcoming Events</h2>
+</section>
+ <div class="grid">
+    <div class="card">
+      <a href="slide2.html">
+      <img src="download.jpg"></a>
+      <div class="title">Entomology International Congress of Vancouver</div>
+      <div class="read-time">📅 Fri, 15 Sep 2025</div>
+    </div>
+
+    <div class="card">
+      <a href="slide3.html">
+      <img src="https://oneyogathailand.com/wp-content/uploads/2023/04/meditation-retreat-in-silence-to-cultivate-inner-peace-and-presence-on-koh-phangan-scaled.jpg"></a>
+      <div class="title">Success Free Career & Meditation Classes</div>
+      <div class="read-time">📅 Fri, 10 Nov 2025</div>
+    </div>
+
+    <div class="card">
+      <a href="slide4.html">
+      <img src="https://lirp.cdn-website.com/1dfea452/dms3rep/multi/opt/IMG_9839-1920w.jpg"></a>
+      <div class="title">Career Fair: Exclusive Hiring Event</div>
+      <div class="read-time">📅 Thu, 26 Oct 2025</div>
+    </div>
+
+    <div class="card">
+      <img src="https://media.gettyimages.com/id/1401171512/photo/rising-stock-market-trading-chart.jpg?s=612x612&w=gi&k=20&c=EMfYjufjLG6WKZAiAuSvV7vfl-hiOQxDzuoRL4RtuFo=">
+      <div class="title">Stock Market Expo</div>
+      <div class="read-time">📅 Sat,21 Dec 2025</div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.khuranaandkhurana.com/wp-content/uploads/2022/06/Stand-Up.jpg">
+      <div class="title">Standup</div>
+      <div class="read-time">📅 Tue, 17 Aug 2025 </div>
+    </div>
+
+    <div class="card">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6V-ahMs00zGnyy61VNQj7NKQWrOG_m0PyqA&s">
+      <div class="title">Modern Marketing Expo</div>
+      <div class="read-time">📅 Wed, 05 Nov 2025</div>
+    </div>
+ </div>
+
+
+
+</body>
+</html>

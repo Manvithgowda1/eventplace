@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fcfcfd;
+    }
+
+    header {
+      background: linear-gradient(to right, #673ab7, #512da8);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 40px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+      font-size: 30px;
+    }
+
+    nav a:hover {
+      color: black;
+    }
+
+    .buy-ticket {
+      background: white;
+      color: #512da8;
+      padding: 8px 15px;
+      border-radius: 20px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+      font-size: 25px;
+    }
+
+    .hero {
+      background: linear-gradient(to right, #6a1b9a, #512da8);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #ddd;
+    }
+
+    .hero p {
+      font-size: 22px;
+      color: #ddd;
+    }
+
+    .container {
+      max-width: 1000px;
+      padding: 60px;
+      background: rgba(254, 253, 253, 0.976);
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      margin: 40px auto;
+    }
+
+    .container h2 {
+      color: #512da8;
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .contact-info h2 {
+      margin-top: 30px;
+      font-size: 28px;
+    }
+
+    .contact-info p {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 18px;
+    }
+
+    .contact-form textarea {
+      height: 150px;
+      resize: vertical;
+    }
+
+    .send-btn {
+      background-color: #512da8;
+      color: white;
+      border: none;
+      padding: 15px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 20px;
+      width: 100%;
+    }
+
+    .send-btn:hover {
+      background-color: white;
+      color: black;
+      border: 1px solid #512da8;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>EventPlace</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="event.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="buy-ticket">Buy Tickets</button>
+  </header>
+
+  <section class="hero">
+    <p>Find Your Next Experience</p>
+    <h2>Contact Us</h2>
+  </section>
+
+  <div class="container">
+    <h2>Reach out to our team for bookings or collaborations</h2>
+    <hr>
+
+    <div class="contact-info">
+      <h2>Address</h2>
+      <p>4671 PES College, Mandya</p>
+
+      <h2>Phone</h2>
+      <p>8431588553</p>
+
+      <h2>Email</h2>
+      <p>abcd@email.com</p>
+    </div>
+
+    <hr>
+
+    <div class="contact-form">
+      <h2>Send Message</h2>
+      <form>
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Type your message..." required></textarea>
+        <button type="submit" class="send-btn">Send</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

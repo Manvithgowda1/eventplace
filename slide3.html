@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Image Slide</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    header {
+      background: linear-gradient(to right, #673ab7, #512da8);
+      color: white;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: 500;
+    }
+    nav a:hover{
+      color: black;
+    }
+
+    .buy-ticket {
+      background: white;
+      color: #512da8;
+      padding: 8px 15px;
+      border-radius: 20px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .slide-container {
+      flex: 1;
+      max-width: 900px;
+      background: white;
+      padding: 30px;
+      margin: 40px auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .top-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .top-section img {
+      width: 300px;
+      height: 200px;
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    .heading {
+      font-size: 28px;
+      font-weight: bold;
+      color: #333;
+      flex: 1;
+      padding-top: 10px;
+    }
+
+    .description {
+      margin-top: 25px;
+      font-size: 16px;
+      color: #555;
+      line-height: 1.6;
+    }
+
+    .date-time {
+      margin-top: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    .book-btn {
+      display: block;
+      background-color: #673ab7;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 40px auto 20px;
+    }
+
+    .book-btn:hover {
+      background-color: #512da8;
+    }
+
+    footer {
+      text-align: center;
+      padding-bottom: 20px;
+    }
+
+    /* ✅ Corrected the selector to use a class instead of invalid 'hero' tag */
+    .hero {
+      background: linear-gradient(to right, #6a1b9a, #512da8);
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      position: relative;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 22px;
+      color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>EventPlace</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="event.html">Events</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <button class="buy-ticket">Buy Tickets</button>
+  </header>
+
+  <section class="hero">
+    <p>Find Your Next Experience</p>
+    <h2>Bookings</h2>
+  </section> 
+
+  <div class="slide-container">
+    <div class="top-section">
+      <img src="https://oneyogathailand.com/wp-content/uploads/2023/04/meditation-retreat-in-silence-to-cultivate-inner-peace-and-presence-on-koh-phangan-scaled.jpg " alt="Event Image">
+      <div class="heading">Success Free Career & Meditation Classes</div>
+    </div>
+
+    <div class="description">
+         🎯 Benefits of These Programs
+            Improved focus & clarity — meditation reduces stress and enhances concentration.
+
+            Goal alignment — guided visualizations help reinforce career aspirations.
+
+            Work-life balance — learn practical techniques to manage burnout and improve well-being.
+
+            Confidence building — mindfulness supports emotional resilience in job transitions
+    </div>
+
+    <div class="date-time">
+      <div><strong>Date:</strong> Nov 10, 2025</div>
+      <div><strong>Time:</strong> 7:00 AM - 9:00 AM</div>
+    </div>
+  </div>
+
+  <footer>
+    <button class="book-btn">Book Now</button>
+  </footer>
+</body>
+</html>
