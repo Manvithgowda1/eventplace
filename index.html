@@ -671,21 +671,19 @@
           return;
         }
 
-        // Simulate API call
-        setIsLoading(true);
-        setTimeout(() => {
-          setIsLoading(false);
-          
-          // Mock authentication - in real app, this would be an API call
-          if (formData.username === 'demo' && formData.password === 'password') {
+        // Check credentials
+        if (formData.username === 'Abc' && formData.password === '123') {
+          setIsLoading(true);
+          setTimeout(() => {
+            setIsLoading(false);
             showToast('Login successful! Redirecting...');
             setTimeout(() => {
               window.location.href = 'sample.html';
             }, 1500);
-          } else {
-            showToast('Invalid username or password', 'error');
-          }
-        }, 1500);
+          }, 1500);
+        } else {
+          showToast('Invalid username or password', 'error');
+        }
       };
 
       // Handle social login
@@ -696,8 +694,8 @@
       // Demo login for quick testing
       const handleDemoLogin = () => {
         setFormData({
-          username: 'demo',
-          password: 'password',
+          username: 'Abc',
+          password: '123',
           rememberMe: false
         });
         showToast('Demo credentials filled');
@@ -717,7 +715,7 @@
           
           <form onSubmit={handleSubmit}>
             <div className="input-group">
-              <label htmlFor="username">Username or Email</label>
+              <label htmlFor="username">Username</label>
               <div className="input-wrapper">
                 <input
                   type="text"
@@ -725,7 +723,7 @@
                   name="username"
                   value={formData.username}
                   onChange={handleChange}
-                  placeholder="Enter your username or email"
+                  placeholder="Enter your username"
                   required
                 />
                 <i className="fas fa-user input-icon"></i>
