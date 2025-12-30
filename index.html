@@ -671,20 +671,27 @@
           return;
         }
 
-        // Check credentials
-        if (formData.username === 'Abc' && formData.password === '123') {
-          setIsLoading(true);
-          setTimeout(() => {
-            setIsLoading(false);
-            showToast('Login successful! Redirecting...');
-            setTimeout(() => {
-              window.location.href = 'sample.html';
-            }, 1500);
-          }, 1500);
-        } else {
-          showToast('Invalid username or password', 'error');
-        }
-      };
+        const handleSubmit = (e) => {
+  e.preventDefault();
+
+  // Simple validation
+  if (!formData.username || !formData.password) {
+    showToast('Please fill in all fields', 'error');
+    return;
+  }
+
+  // Allow any username & password
+  setIsLoading(true);
+
+  setTimeout(() => {
+    setIsLoading(false);
+    showToast('Login successful! Redirecting...');
+    setTimeout(() => {
+      window.location.href = 'sample.html';
+    }, 1500);
+  }, 1500);
+};
+
 
       // Handle social login
       const handleSocialLogin = (provider) => {
@@ -842,4 +849,5 @@
   </script>
 </body>
 </html>
+
 
